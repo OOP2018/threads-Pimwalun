@@ -28,7 +28,6 @@ public class ThreadSum {
 		runThreads(5, counter4, LIMIT);
 	}
 
-	/* Create 10 Thread. */
 	public static void runThreads(Counter counter, final int limit) {
 		// two tasks that add and subtract values using same Counter
 		AddTask addtask = new AddTask(counter, limit);
@@ -54,6 +53,7 @@ public class ThreadSum {
 		System.out.printf("Counter total is %d\n", counter.get());
 	}
 
+	/* Create 10 Thread. */
 	public static void runThreads(int nthread, Counter counter, final int limit) {
 		ExecutorService executor = Executors.newFixedThreadPool(2 * nthread);
 		// start the tasks
