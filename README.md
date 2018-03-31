@@ -30,7 +30,7 @@ The threads use the counter to add and subtract values.
 
 ## 2. Implications for Multi-threaded Applications
 
-   When we want deposit money is 100 in bank and the balance is 1100 from 1000. In the same time my mom want to withdraw money is 500 in the bank and the balance is 500 from 1000. But the balance should be 600 in bank amount.
+   When we want deposit money is 100 in bank and the balance is 1100 from 1000. In the same time my mom want to withdraw money is 500 in the bank and the balance is 500 from 1000. But the balance should be 600 in bank account.
 
 ## 3. Counter with ReentrantLock
 
@@ -60,7 +60,7 @@ The threads use the counter to add and subtract values.
 
 6.1 Average run-times of ReentrantLock > Synchronized method > AtomicLong. The AtomicLong is fastest and ReentrantLock is slowest.
 
-6.2 
+6.2 Synchronized because it will complete one thread one by one. For example we sent a secret code. After that the sender is blocked until a secret code is received.
 
 ## 7. Using Many Threads (optional)
 

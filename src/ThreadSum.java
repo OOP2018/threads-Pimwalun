@@ -1,4 +1,6 @@
+
 /**
+ * Find run-times and total counter of all the solutions.
  * 
  * @author Pimwalun Witchawanitchanun
  *
@@ -9,11 +11,11 @@ public class ThreadSum {
 		final int LIMIT = 10000000;
 		// The counter that accumulates a total.
 		Counter counter = new CounterWithLock();
-//		counter.add(50);
-//		counter.add(15);
-//		System.out.println(counter.get());
-//		counter.add(34);
-//		System.out.println(counter.get());
+		// counter.add(50);
+		// counter.add(15);
+		// System.out.println(counter.get());
+		// counter.add(34);
+		// System.out.println(counter.get());
 		runThreads(counter, LIMIT);
 	}
 

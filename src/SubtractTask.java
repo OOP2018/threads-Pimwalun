@@ -1,5 +1,11 @@
 
-public class SubtractTask implements Runnable{
+/**
+ * SubtractTask sub number 1 ... limit to the counter, then exits.
+ * 
+ * @author Pimwalun Witchawanitchanun
+ *
+ */
+public class SubtractTask implements Runnable {
 	private Counter counter;
 	private int limit;
 
@@ -10,7 +16,9 @@ public class SubtractTask implements Runnable{
 
 	@Override
 	public void run() {
-		for (int k = 1; k <= limit; k++)
+		for (int k = 1; k <= limit; k++) {
 			counter.add(-k);
+			// System.out.println("Done "+Thread.currentThread().getName());
+		}
 	}
 }

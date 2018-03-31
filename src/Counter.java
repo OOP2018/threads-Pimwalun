@@ -29,6 +29,12 @@ public class Counter {
 	}
 }
 
+/**
+ * An accumulator for a sum with lock.
+ * 
+ * @author Pimwalun Witchawanitchanun
+ *
+ */
 class CounterWithLock extends Counter {
 	private Lock lock = new ReentrantLock();
 
@@ -42,6 +48,12 @@ class CounterWithLock extends Counter {
 	}
 }
 
+/**
+ * An accumulator for a sum by use synchronized method.
+ * 
+ * @author Pimwalun Witchawanitchanun
+ *
+ */
 class SynchronousCounter extends Counter {
 	@Override
 	public synchronized void add(int amount) {
@@ -49,6 +61,12 @@ class SynchronousCounter extends Counter {
 	}
 }
 
+/**
+ * An accumulator for a sum by use AtomicLong.
+ * 
+ * @author Pimwalun Witchawanitchanun
+ *
+ */
 class AtomicCounter extends Counter {
 	private AtomicLong total;
 
